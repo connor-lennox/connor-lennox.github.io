@@ -35,35 +35,76 @@
             <h1>Projects</h1>
         </div>
 
-        <div class="container pt-4 pb-1 mb-4">
-            <h2 class="pb-1 border-bottom fs-4">Impromptune</h2>
-            <p>
-                This project was for my undergraduate thesis at UNH. The main motivation was to create a machine learning model that could continue a piece of music, much like how modern text generators continue "prompts" of text.
-                To achieve this effect, I took advantage of some techniques that are used in Natural Language Processing to continue sequences of text. Specifically, I borrowed some ideas from the Transformer model and GPT-2, 
-                both of which are built on the idea of "Attention" for making predictions. Since music is generally quite structured, this approach worked quite well as prior notes in the sequence 
-                were able to inform what should come next.
-            </p>
-            <p>
-                One of the novel attention mechanisms I explored in this project was a "Predictive Relative Attention" layer.
-                This layer uses a history of the most recent output notes, as well as the overall context of the piece, to predict a distribution of next notes.
-            </p>
-            <p>
-                You can view the <a href="https://github.com/connor-lennox/Impromptune">source code</a> for this project on GitHub. Also, you can download a <a href="./other/impromptune_demo.mp3">demo of its output</a> if you want to hear what the generated tracks sound like.
-            </p>
+        <div class="container">
+            <h1 class="pb-1 border-bottom fs-3">Machine Learning</h1>
+
+            <div class="container pt-4 pb-1 mb-4">
+                <h2 class="pb-1 border-bottom fs-4">Impromptune</h2>
+                <p>
+                    This project was for my undergraduate thesis at UNH. The main motivation was to create a machine learning model that could continue a piece of music, much like how modern text generators continue "prompts" of text.
+                    To achieve this effect, I took advantage of some techniques that are used in Natural Language Processing to continue sequences of text. Specifically, I borrowed some ideas from the Transformer model and GPT-2, 
+                    both of which are built on the idea of "Attention" for making predictions. Since music is generally quite structured, this approach worked quite well as prior notes in the sequence 
+                    were able to inform what should come next.
+                </p>
+                <p>
+                    One of the novel attention mechanisms I explored in this project was a "Predictive Relative Attention" layer.
+                    This layer uses a history of the most recent output notes, as well as the overall context of the piece, to predict a distribution of next notes.
+                </p>
+                <p>
+                    You can view the <a href="https://github.com/connor-lennox/Impromptune">source code</a> for this project on GitHub. Also, you can download a <a href="./other/impromptune_demo.mp3">demo of its output</a> if you want to hear what the generated tracks sound like.
+                </p>
+            </div>
+
+            <div class="container pt-4 pb-1 mb-4">
+                <h2 class="pb-1 border-bottom fs-4">TorchShepherd</h2>
+                <p>
+                    One of the most frustrating parts of starting a new machine learning project is rewriting the same boiler-plate code over and over again.
+                    To try and alleviate some of this frustration, I've been building a package that wraps the standard PyTorch training process.
+                    However, a common concern with this type of package is that there will be a trade-off with functionality: by making the training process simpler, there will be less fine-grained control over its behavior.
+                    I eliminate this concern by opting for a lambda-oriented approach. The exposed functions of my package take functions themselves as parameters, and with this mechanism end users 
+                    can still achieve fine-grained control over the specifics of the training process.
+                </p>
+                <p>
+                    This project is open-source, and is viewable <a href="https://github.com/connor-lennox/TorchShepherd">on GitHub here</a>. If you're interested in contributing, feel free to open an issue on the GitHub repo or create a pull request.
+                </p>
+            </div>
         </div>
 
-        <div class="container pt-4 pb-1 mb-4">
-            <h2 class="pb-1 border-bottom fs-4">TorchShepherd</h2>
-            <p>
-                One of the most frustrating parts of starting a new machine learning project is rewriting the same boiler-plate code over and over again.
-                To try and alleviate some of this frustration, I've been building a package that wraps the standard PyTorch training process.
-                However, a common concern with this type of package is that there will be a trade-off with functionality: by making the training process simpler, there will be less fine-grained control over its behavior.
-                I eliminate this concern by opting for a lambda-oriented approach. The exposed functions of my package take functions themselves as parameters, and with this mechanism end users 
-                can still achieve fine-grained control over the specifics of the training process.
-            </p>
-            <p>
-                This project is open-source, and is viewable <a href="https://github.com/connor-lennox/TorchShepherd"> on GitHub here</a>. If you're interested in contributing, feel free to open an issue on the GitHub repo or create a pull request.
-            </p>
+        <div class="container">
+            <h1 class="pb-1 border-bottom fs-3">Emulators</h1>
+
+            <div class="container pt-4 pb-1 mb-4">
+                <h2 class="pb-1 border-bottom fs-4">Rust-Chip</h2>
+                <p>
+                    The CHIP-8 was never a real console, rather an interpreter that ran on the COSMAC-VIP computer. That being said, due to its relative simplicity (only 35 opcodes in total) it serves as the "Hello World!" of emulator development.
+                    My CHIP-8 intepreter is written in Rust, and served as my first foray into the language. The data-driven and functional approach to Rust lends itself well to emulation, 
+                    since the main process of emulation consists of modeling the state changes in the original device due to the loaded program and user input.
+                </p>
+                <p>
+                    This project is available <a href="https://github.com/connor-lennox/rust_chip">on GitHub</a>, and is capable of running CHIP-8 games (a few are provided in the repo).
+                    The README of this repo is very detailed and goes into the specifics of how each component is emulated. If you're interested in how the CHIP-8 worked or how I simulate it, I recommend giving that a read.
+                </p>
+                <p>
+                    If you have a Rust toolchain installed, you should be able to clone the GitHub repo and run the intepreter on your own computer.
+                </p>
+            </div>
+
+            <div class="container pt-4 pb-1 mb-4">
+                <h2 class="pb-1 border-bottom fs-4">rGBL</h2>
+                <p>
+                    For my first "real" emulator project, I built an emulator for the Nintendo Gameboy DMG. This is quite a bit more complex than the CHIP-8, since the Gameboy was real hardware 
+                    with real specifications (and a considerable amount of undocumented and undefined behavior). My general approach to this project was to emulate each component 
+                    individually, then combine them similar to how the Gameboy itself worked.
+                </p>
+                <p>
+                    Thanks to others who have tackled this project before, there is a good amount of documentation available online regarding how the Gameboy works and the subtleties of its operation. 
+                    This is incredibly useful for emulator development, because it means I don't have to completely reverse-engineer the original hardware (and instead I was able to focus 
+                    on making a well-structured software version of it).
+                </p>
+                <p>
+                    The source code for my Gameboy emulator is <a href="https://github.com/connor-lennox/rgbl">available here</a>.
+                </p>
+            </div>
         </div>
     </body>
 
