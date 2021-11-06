@@ -34,6 +34,23 @@
         <div class="container px-5 pt-4 pb-1 mb-4 bg-dark text-light rounded-3">
             <h1>Projects</h1>
         </div>
+
+        <div class="container pt-4 pb-1 mb-4">
+            <h2 class="pb-1 border-bottom fs-4">Impromptune</h2>
+            <p>
+                This project was for my undergraduate thesis at UNH. The main motivation was to create a machine learning model that could continue a piece of music, much like how modern text generators continue "prompts" of text.
+                To achieve this effect, I took advantage of some techniques that are used in Natural Language Processing to continue sequences of text. Specifically, I borrowed some ideas from the Transformer model and GPT-2, 
+                both of which are built on the idea of "Attention" for making predictions. Since music is generally quite structured, this approach worked quite well as prior notes in the sequence 
+                were able to inform what should come next.
+            </p>
+            <p>
+                One of the novel attention mechanisms I explored in this project was a "Predictive Relative Attention" layer.
+                This layer uses a history of the most recent output notes, as well as the overall context of the piece, to predict a distribution of next notes.
+            </p>
+            <p>
+                You can view the <a href="https://github.com/connor-lennox/Impromptune">source code</a> for this project on GitHub. Also, you can download a <a href="./other/impromptune_demo.mp3">demo of its output</a> if you want to hear what the generated tracks sound like.
+            </p>
+        </div>
     </body>
 
 </html>
