@@ -1,0 +1,14 @@
+baseURL = 'http://connorlennox.com/'
+languageCode = 'en-us'
+title = 'Connor'
+theme = 'hugo-classic'
+
+[[menu.main]]
+name = "Projects"
+url = "/projects/"
+weight = 1
+
+[[menu.main]]
+name = "Research"
+url = "/research/"
+weight = 2
