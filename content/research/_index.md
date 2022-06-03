@@ -17,6 +17,6 @@ Before I got involved with NLP, I did some work on signal processing and classif
 
 # Publications
 
-- [C.Lennox **"Impromptune: Symbolic Music Generation with Relative Attention Mechanisms"**](pubs/impromptune.pdf)
-- [A.Keesee, V.Pinto, M.Coughlan, C.Lennox, MS.Mahmud, H.Connor **"Comparison of deep learning techniques to model connections between solar wind and ground magnetic perturbations"**](pubs/magnetic-perturbations.pdf)
-- [C.Lennox, MS.Mahmud **"Robust Classification of Cardiac Arrhythmia Using a Deep Neural Network"**](pubs/arrhythmia-detection.pdf)
+- [C.Lennox **"Impromptune: Symbolic Music Generation with Relative Attention Mechanisms"**](/pubs/impromptune.pdf)
+- [A.Keesee, V.Pinto, M.Coughlan, C.Lennox, MS.Mahmud, H.Connor **"Comparison of deep learning techniques to model connections between solar wind and ground magnetic perturbations"**](/pubs/magnetic-perturbations.pdf)
+- [C.Lennox, MS.Mahmud **"Robust Classification of Cardiac Arrhythmia Using a Deep Neural Network"**](/pubs/arrhythmia-detection.pdf)
