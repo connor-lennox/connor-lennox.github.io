@@ -12,7 +12,7 @@ My work on summarization is centered around a multistage approach to abstractive
 
 An interesting result of this approach to article generation is the traceability of the provenance of each output statement. This allows for a more interpretable output, or at the very least a means of verifying the facts in the article.
 
-Before I got involved with NLP, I did some work on signal processing and classification, where I focused on arrhthmia detection and magnetic wave perturbations (they're more similar than you'd think!).
+Before I got involved with NLP, I did some work on signal processing and classification, where I focused on arrhythmia detection and magnetic wave perturbations (they're more similar than you'd think!).
 
 
 # Publications
