@@ -4,6 +4,16 @@ title: Projects
 
 These are just a few of the projects I've worked on. I'm notorious for not finishing the things I've started ([evidence on my Github](https://github.com/connor-lennox)), but the projects listed here are more or less complete.
 
+# [Autofloss](https://connorlennox.com/autofloss)
+
+I figure the best way to learn cross stitch is to start by developing an application which converts images and photographs into cross stitch patterns. So, I built *autofloss*, which is an in-browser way to make cross stitch patterns from uploaded images.
+
+The image creation process is interesting because we are restricted to using colors available for purchase. The most common manufacturer of cross stitch thread (often called "floss") I found referenced online was DMC, so I loaded the full catalogue of DMC floss colors (about 500) as available colors for image building. I developed a greedy algorithm for optimizing color selection based on reducing entropy between a working state and a downsampled version of the target image.
+
+This was my first foray into using React, so most of my development time was spent making a decent looking UI, managing application state between components, and providing useful things such as downloading a finished pattern for later use. The actual image solver was finished in an evening!
+
+If you'd like to give it a try, it's [available online here!](https://connorlennox.com/autofloss). If you'd like to see how I made it, the source code is [also available online at Github.](https://github.com/connor-lennox/autofloss)
+
 # Emulators
 
 Some old video games are pretty fun, but it's a pain to actually set up the consoles needed to play them. Emulation takes this old hardware and replaces it with software, so that it can run on a computer (much more powerful than an NES). I've done a few projects regarding emulation, mostly working in Rust as it's a great language for this type of thing.
